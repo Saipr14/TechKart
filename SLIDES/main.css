@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 0%;
+    padding:0%;
+    font-family: serif;
+}
+body{
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+    background-color: #cbd3d0;
+
+}
+.logo{
+  align-items: center;
+    position: relative;
+    bottom: 30.6px;
+    left: 50px;
+
+}
+.sidenav {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 248, 248);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 10px ;
+  padding-bottom: 110px;
+  float: left;
+}
+
+.sidenav .top{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom:3%;
+  list-style: none;
+  font-size:23px ;
+  color: #fff;
+  text-align: center;
+  background-color: #030303;
+  padding-right :350px ;
+  padding-top: 20px;
+  padding-bottom: 14px;
+  flex-wrap: nowrap;
+
+}
+.sidenav .top img{
+  display: flex;
+  flex-direction: row;
+  float: left;
+  flex-wrap: nowrap;
+}
+
+.si a {
+position: relative;
+bottom: 76px;
+left: 30px;
+font-size:large;
+color: #f1f1f1;
+}
+.sidenav  a {
+  padding: 8px 16px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: rgb(145, 141, 151);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  z-index: 1;
+  color: #f1f1f1;
+}
+
+@media screen and (max-height: 415px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.sidenav .closebtn:hover{
+        color: rgb(145, 141, 151);
+}
+a{
+   text-decoration: none;
+   color: black;  
+   animation: down-bump 0.4s ease;
+}
+.ser{
+  background-color: azure;
+}
+.topnav {
+    overflow: hidden;
+    padding-bottom: -6%;;
+    background-color: #030303;
+  }
+.span{
+position: relative;
+top: 18px;
+color: #fff;
+}
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    position: relative;
+    width: 100%;
+    border: none;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    bottom: 60.6px;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    bottom: 60.6px;
+
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+/*slideshow ...................*/
+
+.slider{
+  position: relative;
+  top: -46px;
+  overflow: hidden;
+  margin: 50px 0 75px;
+  height: 230px;
+  z-index: -1;
+  max-width: 1680px;
+}
+.explorecont{
+  position: relative;
+}
+
+
+
+

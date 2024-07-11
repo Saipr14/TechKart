@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Techkart|Sign In
+      </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="signin.css"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+       integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+       crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <script type="text/javascript" src="jas.js"></script>
+   </head>
+   <body>    
+<div id="preloader"></div>
+    <div class="logo"><img src="techkart.png"></div>
+   <div class="sign-in">
+      <form name="sign in" onSubmit="return signin()" action="login.php"  method="POST">
+         <h1>Sign In</h1>
+		 <label>Name</label><br>
+         <input type="text" name="fname" id="fname" placeholder="Enter Name" size="42"><span></span>
+   <br><br> 
+   <label>Email</label><br>
+         <input type="text" name="email" id="fname" placeholder="Enter E-mail" size="42"><span></span>
+   <br><br>  
+            <label>Password</label><br>
+          <input type="password" name="pass" id="password" placeholder="Enter password" size="42" >
+          <br>
+          <br>
+          <div class="errorbox" id="errorbox"></div>
+          <input type="submit" name="" value="Sign  In" >
+          <br>
+          <br>
+          New user?<a href="Register.html"><br>Sign-Up</a>
+      </form>
+   </div>
+
+
+   <style>
+      #preloader{
+     height: 100vh;
+     width: 100%;
+     z-index: 100;
+     background: url("preloader.gif") no-repeat;
+  }
+  </style>
+  
+          <script>
+    var loader = document.getElementById("preloader")
+    window.addEventListener("load",function(){
+     loader.style.display="none";
+    })
+  
+     </script>
+
+
+
+
+
+
+
+
+  
+
+   </body>
+
+
+
+
+
+</html>

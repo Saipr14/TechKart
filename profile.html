@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-..." crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <title>Techkart|Profile
+  </title>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <div class="header">
+         <div class="logooo">
+             <a href="#"><img src="techkart.png" width="160" height="56"></a>
+         </div>
+         <div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+   </div>
+</div>
+         <div class="nav">
+          <ul>
+            <a href="sign in.html">  <li><h5 style="color: white;">SignIn<br></h5></li>
+        <li><img src="user.jpg" width="40px" height="30px"></li> </a>
+            </ul></div>
+
+ <!-- </div>
+   <div class="carousel">
+    <div><img src="SLIDES/center.jpg" height="250px"></div>
+    <div><img src="SLIDES/nothing2.png" ></div>
+    <div><img src="SLIDES/Screenshot (50).jpg" height="250px"></div>
+</div>
+--> 
+<div class="cj1">
+  
+</div>
+<style>
+    *{
+   margin: 0;
+   padding: 0;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 14px;
+   font-weight: lighter;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background-color:black;
+}
+.header{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: black;
+      padding-bottom: 20px;
+     box-shadow: 2px 0px 8px gray;
+  }
+  .nav{
+      flex: 1;
+      text-align: right;
+  }
+  
+  .nav ul{
+      display: inline-block;
+      list-style-type: none;
+  }
+  
+  .nav ul li{
+      display: flex;
+      display: inline-block;
+      margin-right:20px;
+      margin-top: 29px; 
+      color: white; 
+      font-family:sans-serif;
+      font-size: 18px;
+  }
+  .logooo img{
+      align-items: center;
+      position: relative;
+      top: 10px;
+      left: 10px;
+  }
+  .search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid grey;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+ width: 40px;
+  height: 34.5px;
+  border: 1px solid grey;
+
+  text-align: center;
+  color: #191919;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*carousel css*/
+.carousel {
+  width: 100%;
+height: 400px;
+}
+.carousel img {
+  width: 100%;
+  height: auto;
+ 
+}
+  
+        /* Custom styles for dots */
+      
+        
+        /* Custom styles for arrows */
+        .slick-prev,
+        .slick-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0;
+            line-height: 0;
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            border: none;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            z-index: 1;
+        }
+        
+        .slick-prev {
+            left: 20px;
+        }
+        
+        .slick-next {
+            right: 20px;
+        }
+        
+        .slick-prev:before,
+        .slick-next:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+        }
+        
+        .slick-prev:before {
+            transform: translate(-50%, -50%) rotate(-135deg);
+        }
+        
+        .slick-next:before {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        
+        /* Custom styles for arrow hover state */
+        .slick-prev:hover,
+        .slick-next:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+    #preloader{
+   height: 100vh;
+   width: 100%;
+   z-index: 100;
+   position: relative;
+   left: 20%;
+   bottom: 50%;
+   background: url("preloader.gif") no-repeat;
+}
+
+
+</style>
+<!--Preloader script-->
+        <script>
+  var loader = document.getElementById("preloader")
+  window.addEventListener("load",function(){
+   loader.style.display="none";
+  })
+
+   </script>
+<!--Caresouel script-->
+<script>
+  $(document).ready(function(){
+      $('.carousel').slick({ 
+          arrows: true, // Display next/prev arrows
+          prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+          nextArrow: '<button type="button" class="slick-next">Next</button>',
+          autoplay:true,
+          autoplaySpeed:3000
+      });
+  $('.slick-prev').on('click', function(){
+                $('.carousel').slick('slickPrev');
+            });
+
+            $('.slick-next').on('click', function(){
+                $('.carousel').slick('slickNext');
+            });
+        });
+</script>
+</div>
+</body>
+</html>

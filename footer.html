@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylyesheet" href="footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<div class="foot">
+   <div class="abt">
+      <ul>
+        <h4 style="color:rgb(128, 122, 122) ;">ABOUT</h4>
+        <li>Contact us</li>
+        <li>About us</li>
+        <li>Techkart</li>
+      </ul>
+   </div>
+   <div class="hlp">
+    <ul>
+      <h4 style="padding-left: 10px; color: rgb(128, 122, 122);">HELP</h4>
+      <li style="padding-right: 10px;">Payments</li>
+      <li>Shipping</li>
+      <li>TCancellation & Returns</li>
+      <li>FAQ</li>
+    </ul>
+ </div>
+ <div class="pol">
+    <ul>
+      <h4 style="color:rgb(128, 122, 122) ;">POLICY</h4>
+      <li>Return Policy</li>
+      <li>Terms of use</li>
+      <li>Security</li>
+      <li>Privacy</li>
+    </ul>
+ </div>
+ <div id="box" style="display: none;">
+  <div class="soc">
+    <ul>
+      <h4 style="color:rgb(128, 122, 122);">SOCIAL</h4>
+      <li><img src="facebook.png" height="20px" width="20px"> Facebook</li>
+      <li><img src="twitter.png" height="20px" width="20px"> Twitter</li>
+      <li><img src="instagram.png" height="20px" width="20px"> Instagram</li>
+    </ul>
+  </div>
+</div>
+<span class="logo"><img src="techkart.png" width="160px" height="56px"> &nbsp;  &#174;</span>
+</div>
+<style>
+*{
+    margin: auto;
+    padding: auto;
+    margin-top: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+  margin: 0;
+      padding: 0;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media all and (max-width:800px) {
+    body{
+    width: 100%;
+    }
+}
+.foot{
+ height: 333px;
+display:flex;
+flex-direction: row;
+position: relative;
+top: 0;
+left: 0;
+background-color: black;
+color: white;
+}
+
+.foot ul li{
+    cursor: pointer;
+}
+
+.abt ul li,h4{
+  position: relative;
+  top: 50px;
+  padding-top: 7px;
+  padding-right: 10px;
+  list-style: none;
+}
+
+.hlp ul li{
+  position: relative;
+  top: 50px;
+  padding-top: 7px;
+ padding-left: 10px;
+  list-style: none;
+}
+
+.pol ul li{
+  position: relative;
+  top: 50px;
+  padding-top: 7px;
+  list-style: none;
+}
+
+.soc{
+   position: relative;
+   left: 62px;
+   top: -38px;
+}
+.soc ul li{
+  position: relative;
+  top: 50px;
+  padding-top: 7px;
+  list-style: none;
+}
+#box{
+  position: relative;
+  top: 36px;
+  width: 250px;
+  height: 150px;
+  border: 4px solid white;
+  background-color: black;
+  
+}
+
+li:hover{
+    border-bottom: 1px solid white;
+}
+
+.logo{
+  position: relative;
+    top: 200px;
+    right: 40%;
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .foot, .logo {
+    width: 100%;
+  }
+}
+</style>
+<script>
+ document.addEventListener("DOMContentLoaded", function() {
+  // Function to show the box for a specified duration
+  function showBoxForDuration(durationInMilliseconds) {
+    box.style.display = "block"; // Show the box
+    setTimeout(function() {
+      box.style.display = "none"; // Hide the box after the duration
+    }, durationInMilliseconds);
+  }
+
+  // Add a click event listener to the Contact link
+  var contactsLink = document.getElementById("contacts");
+  var box = document.getElementById("box");
+
+  if (contactsLink && box) {
+    contactsLink.addEventListener("click", function(event) {
+      event.preventDefault(); // Prevent the default link behavior
+      
+      // Show the box for 2 seconds (adjust the time as needed)
+      var duration = 2000; // 2 seconds in milliseconds
+      showBoxForDuration(duration);
+    });
+  }
+});
+
+
+</script>
+</div>
+</body>
+
+</html>
