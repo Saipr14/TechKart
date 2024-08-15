@@ -1,13 +1,13 @@
-<?php include("header.html") ?>
 <!DOCTYPE html>
 <html>
     <head>
+        <title>HOME/HELP</title>
     </head>
     <body> 
 <div id="preloader"></div> 
-      <div class="bgg">  <img src="needed.jpg" height="600px" ></div>      
+      <div class="bgg">  <img src="Backgrounds/needed.jpg" height="600px" ></div>      
      
-        <div class="help">
+        <div class="help" style="height: 497px;">
            <form name="help" onSubmit="return help()" action="#"  method="POST">
               <h1>Help us improve</h1><br>
         <label>How often do you use our app?</label><br>
@@ -67,10 +67,10 @@ body{
 .bgg{
     position: absolute;
     left: 700px;
-    bottom: 16px;
-    animation-name: fade-away;
+    bottom: 96px;
+    /* animation-name: fade-away;
     animation-duration: 10s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 @media all and (max-width:800px) {
     .bgg{
@@ -107,7 +107,7 @@ body{
     width: 350px;
     justify-content:center ;
     position: absolute;
-    top: 150px;
+    top: 50px;
     left: 35%;
     color: white;
     padding: 14px 18px;

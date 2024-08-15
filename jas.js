@@ -1,8 +1,13 @@
 
 function signin(){
+    let name = document.forms["sign in"]["fname"].value;
     let e=document.forms["sign in"]["email"].value;
     let p=document.forms["sign in"]["pass"].value;
-      
+
+    if(name == null || name==""){
+    document.getElementById("errorbox").innerHTML="Name is required*\n";
+    return false;
+}
     if(e==null || e==""){
         document.getElementById("errorbox").innerHTML="Email is required*\n";
         return false;
